@@ -51,7 +51,7 @@ const Dashboard = () => {
     const getProductAPI = async () => {
         let token: string|null = localStorage.getItem('token');
         // @ts-ignore
-        return await axios.get('http://eshop-ecommert.herokuapp.com/api/products', {
+        return await axios.get('https://eshop-ecommert.herokuapp.com/api/products', {
             headers: {
                 Authorization: 'Bearer ' + token
             }
