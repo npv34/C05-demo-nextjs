@@ -53,7 +53,7 @@ const Dashboard = () => {
         // @ts-ignore
         return await axios.get('http://eshop-ecommert.herokuapp.com/api/products', {
             headers: {
-                Authorization: 'Bearer ' + JSON.parse(token)
+                Authorization: 'Bearer ' + token
             }
         })
     }
