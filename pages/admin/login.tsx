@@ -57,7 +57,7 @@ const Login: NextPage = () => {
     }
 
     const loginAPI = async (data: IAccount) => {
-        return await axios.post('http://eshop-ecommert.herokuapp.com/api/login', data)
+        return await axios.post('https://eshop-ecommert.herokuapp.com/api/login', data)
     }
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
